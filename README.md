@@ -1,5 +1,10 @@
 # 🏗️ Multi-Agent Co-ordinated Task Planning in Construction
 
+
+<p align="center">
+  <img src="demos/demo.gif" width="800"/>
+</p>
+
 A collaborative research and simulation project that integrates **multi-agent systems**, **computer vision**, and **AI-based planning** to model, analyse, and visualise coordinated task execution in a construction-site environment.
 
 This repository represents the **combined work of the entire team**, including:
@@ -68,9 +73,10 @@ This repository includes **Google Colab notebooks** developed collaboratively by
   
 ### Colab Simulation
 
-<img width="741" height="752" alt="image" src="https://github.com/user-attachments/assets/34fa4a92-7253-4fd9-94e7-4cdd299726f0" />
+<p align="center">
+  <img src="demos/democolab.gif" width="800"/>
+</p>
 
-<img width="743" height="748" alt="image" src="https://github.com/user-attachments/assets/8acecfcf-19c0-4ced-9595-9c7dcac71a9a" />
 
 Construction tasks are modeled as a **Directed Acyclic Graph (DAG)**, ensuring correct execution order through dependency constraints. Multiple robots dynamically select available tasks and execute them in parallel whenever possible. Each agent navigates a 2D grid using Manhattan movement while continuously checking for occupancy conflicts. In case of conflicts, a **priority-based arbitration mechanism** resolves deadlocks by allowing higher-priority agents to proceed. Upon task completion, the system updates the DAG and releases agents to take on newly available tasks, enabling efficient and coordinated execution.
 
